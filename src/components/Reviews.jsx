@@ -38,14 +38,14 @@ const Reviews = () => {
   };
 
   return (
-    <Container id='reviews' sx={{ height: "70vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
+    <Container id='reviews' sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
       <Box sx={{ width: { xs: "100%", md: "50%" }, padding: 3 }}>
         <Typography variant="h4" gutterBottom textAlign="center" sx={{ fontWeight: "bold", mb: 4 }}>
           Avaliações
         </Typography>
         <Slider {...settings}>
           {reviews.map((review, index) => (
-            <Card key={index} sx={{ padding: 3, height: "50vh", display: "flex", flexDirection: "column", justifyContent: "center", boxShadow: 3, borderRadius: 2, backgroundColor: "#fff", transition: "transform 0.3s ease-in-out", '&:hover': { transform: "scale(1.02)" } }}>
+            <Card key={index} sx={{ padding: 3, height: "520px", display: "flex", flexDirection: "column", justifyContent: "center", boxShadow: 3, borderRadius: 2, backgroundColor: "#fff", transition: "transform 0.3s ease-in-out", '&:hover': { transform: "scale(1.02)" } }}>
               <CardContent>
                 <Typography variant="h4" sx={{  fontWeight: "bold", mb: 2 }}>
                   {review.name}
