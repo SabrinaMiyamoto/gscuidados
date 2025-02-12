@@ -5,24 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 const reviews = [
   {
-    name: "Mariana Tannus",
+    name: "Maria, 78 anos",
     rating: 5,
-    comment: `"O melhor cardiologista que já conheci. Salvou minha irmã com 2% de chance de sobreviver de uma embolia pulmonar. Um médico como não existe mais."`,
+    comment: `"Minha cuidadora é atenciosa e carinhosa. Ela me ajuda a me sentir segura e independente em minha própria casa.""`,
   },
   {
-    name: "Rossano",
+    name: "José, 82 anos",
     rating: 5,
-    comment: `"Muito bom atendimento, ele é dedicado e sempre esclarece todas as dúvidas."`,
+    comment: `"A equipe da GS Agência é profissional e confiável. Eu me sinto muito bem cuidado e valorizado."`,
   },
   {
-    name: "Fernanda Oliveira",
+    name: "Ana, 75 anos",
     rating: 5,
-    comment: `"Excelente profissional, me senti muito segura com o atendimento dele."`,
-  },
-  {
-    name: "Carlos Mendes",
-    rating: 5,
-    comment: `"Ótimo médico, muito atencioso e pontual. Recomendo!"`,
+    comment: `"Minha família e eu estamos muito satisfeitos com os serviços prestados. Nosso cuidador se tornou parte da nossa família."`,
   },
 ];
 
@@ -38,7 +33,7 @@ const Reviews = () => {
   };
 
   return (
-    <Container id='reviews' sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+    <Container id='reviews' sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center",  backgroundColor:'#86b5ce'}}>
       <Box sx={{ width: { xs: "100%", md: "50%" }, padding: 3 }}>
         <Typography variant="h4" gutterBottom textAlign="center" sx={{ fontWeight: "bold", mb: 4 }}>
           Avaliações
@@ -59,12 +54,12 @@ const Reviews = () => {
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   <Typography variant="body1" >Simpatia:</Typography>
                   <Rating name="simpatia" value={5} readOnly size="small" sx={{ mb: 1 }} />
-                  <Typography variant="body1">Atendimento:</Typography>
-                  <Rating name="atendimento" value={5} readOnly size="small" sx={{ mb: 1 }} />
+                  <Typography variant="body1">Gentileza:</Typography>
+                  <Rating name="gentileza" value={5} readOnly size="small" sx={{ mb: 1 }} />
                   <Typography variant="body1">Recomendação:</Typography>
                   <Rating name="recomendacao" value={5} readOnly size="small" sx={{ mb: 1 }} />
-                  <Typography variant="body1">Pontualidade:</Typography>
-                  <Rating name="pontualidade" value={5} readOnly size="small" sx={{ mb: 1 }} />
+                  <Typography variant="body1">Confiabilidade:</Typography>
+                  <Rating name="confiabilidade" value={5} readOnly size="small" sx={{ mb: 1 }} />
                 </Box>
               </CardContent>
             </Card>

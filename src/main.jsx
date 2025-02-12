@@ -3,23 +3,30 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import App from "./App";
 
-
 const theme = createTheme({
   palette: {
     primary: { main: "#1976d2" },
-    secondary: { main: "#76B1A9" },
+    secondary: { main: "#409ECE" },
     background: {
-      default: "#e9eef7", 
+      default: "#e2e2e3", 
     },
   },
   typography: {
     fontFamily: "Funnel Sans, sans-serif",
     h1: { 
-      color: "#76B1A9", 
+      color: "#051957", 
       fontFamily: "Funnel Sans, sans-serif", 
     },
     h2: { 
-      color: "#3778fa", 
+      color: "#184782", 
+      fontFamily: "Funnel Sans, sans-serif", 
+    },
+    h3: { 
+      color: "#1f5a99", 
+      fontFamily: "Funnel Sans, sans-serif", 
+    },
+    h4: { 
+      color: "#26619e", 
       fontFamily: "Funnel Sans, sans-serif", 
     },
     h5: { 
@@ -27,15 +34,15 @@ const theme = createTheme({
       fontFamily: "Funnel Sans, sans-serif", 
     },
     h6: { 
-      color: "#76B1A9", 
+      color: "#2A92CA", 
       fontFamily: "Funnel Sans, sans-serif", 
     },
     body1: { 
-      color: "#2e2e2e", 
+      color: "#26619e", 
       fontFamily: "Funnel Sans, sans-serif", 
     },
     body2: { 
-      color: "#cf2721", 
+      color: "#2b8cbb", 
       fontFamily: "Funnel Sans, sans-serif", 
     },
   },

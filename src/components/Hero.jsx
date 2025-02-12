@@ -1,13 +1,14 @@
 import { Box, Typography, Button } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import TransitionImage from "../assets/img/estetoscopio.jpeg";
+import Logo from '../assets/img/imgs/logogsss.png'
+import TransitionImage from "../assets/img/imgs/img11.jpg"
 
 const Hero = () => {
-  // Função para rolar a página até a seção "about"
+  
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" }); // Rola suavemente
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -22,6 +23,18 @@ const Hero = () => {
         width: "100%",
       }}
     >
+      {/* logo */}
+      <Box
+      component='img'
+      src={Logo}
+      alt="Logo da GS Agência de idosos"
+      sx={{
+        width: {xs: '100px', sm:'150px', md:'200px'},
+        height:'auto',
+        mb:2 
+      }}>
+
+      </Box>
       {/* Nome do Médico */}
       <Typography
         variant="h1"
@@ -31,7 +44,7 @@ const Hero = () => {
           mb: 2,
         }}
       >
-        Dr. Mauro Hideyuki Miyamoto
+        Gs Agência de Cuidados de Idosos
       </Typography>
 
       {/* Seção de Especialidade e Botão */}
@@ -46,7 +59,7 @@ const Hero = () => {
           padding: "1rem", 
         }}
       >
-        {/* Especialidade em duas linhas */}
+        {/* Especialidade  */}
         <Typography
           variant="h5"
           sx={{
@@ -55,8 +68,10 @@ const Hero = () => {
             lineHeight: "1.5", 
           }}
         >
-          Cardiologista e Intensivista com <br />
-          mais de 30 anos de experiência.
+          Cuidados personalizado e compassivo para os <br></br>
+          seus entes queridos, com uma
+          <br></br>equipe de profissionais
+          altamente treinada.
         </Typography>
 
         {/* Botão de ação */}
@@ -75,7 +90,7 @@ const Hero = () => {
             "&:hover": { backgroundColor: "secondary.main" },
           }}
         >
-          Saiba mais
+          Nossos Serviços
         </Button>
       </Box>
 

@@ -11,7 +11,7 @@ const Header = () => {
           Sobre
         </a>
         <a href='#interview' style={{ marginRight: '10px', color: 'inherit', textDecoration: 'none' }}>
-          Entrevista
+          Nossos Serviços
         </a>
         <a href='#reviews' style={{ marginRight: '10px', color: 'inherit', textDecoration: 'none' }}>
           Avaliações
@@ -19,7 +19,9 @@ const Header = () => {
         <a href="#contact" style={{ marginRight: '10px', color: 'inherit', textDecoration: 'none' }}>
         Locais de atendimento
         </a>
-
+        <a href="#form" style={{ marginRight: '10px', color: 'inherit', textDecoration: 'none' }}>
+        Avaliação
+        </a>
       </div>
         </Box>
 

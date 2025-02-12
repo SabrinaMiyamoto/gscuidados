@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import './App.css'
 import Header from "./assets/Header";
 import Footer from "./assets/Footer";
+import Form from "./components/Form";
 
 function App() {
   const theme = useTheme();
@@ -18,6 +19,7 @@ function App() {
       <Interview />
       <Reviews />
       <Contact />
+      <Form />
       <Footer />
 
     </>
