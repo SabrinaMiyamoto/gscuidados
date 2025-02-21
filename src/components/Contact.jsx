@@ -1,13 +1,21 @@
 import { Container, Typography, Box, IconButton } from "@mui/material";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import Logo from '../assets/img/imgs/logogsss.png';
 
 const Contact = () => {
+  // Função para abrir o WhatsApp
+  const openWhatsApp = () => {
+    window.open("https://wa.me/5548996172582", "_blank");
+  };
+
   return (
-    <Container id="contact" disableGutters sx={{ height: '100%', py: 4, px: 0.5 }}> {/* Adicionado px: 0.5 para margem lateral */}
+    <Container id="contact" disableGutters sx={{ height: '100%', py: 4, px: 0.5 }}>
       {/* Título e seta para subir */}
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 2, marginBottom: 3, py: 2 }}>
-        <Typography variant="h4">Endereço de Atendimento</Typography>
+        <Typography variant="h4">Contatos</Typography>
         <IconButton
           onClick={() => window.scrollTo(0, 0)}
           color="primary"
@@ -27,10 +35,10 @@ const Contact = () => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-evenly', // Distribui o espaço entre a logo e os contatos
+          justifyContent: 'space-evenly',
           alignItems: 'center',
-          gap: 2, // Reduzi o gap para deixar os elementos mais próximos
-          flexDirection: { xs: 'column', sm: 'row' }, // Responsivo: coluna em mobile, linha em desktop
+          gap: 2,
+          flexDirection: { xs: 'column', sm: 'row' },
         }}
       >
         {/* Logo (Lado Esquerdo) */}
@@ -39,7 +47,7 @@ const Contact = () => {
           src={Logo}
           alt="Logo da GS Agência de Cuidados de Idosos"
           sx={{
-            width: { xs: '150px', sm: '200px', md: '250px' }, // Ajuste o tamanho conforme necessário
+            width: { xs: '150px', sm: '200px', md: '250px' },
             height: 'auto',
           }}
         />
@@ -49,20 +57,28 @@ const Contact = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            gap: 1, // Reduzi o gap entre os itens de contato
-            textAlign: { xs: 'center', sm: 'left' }, // Centralizado em mobile, alinhado à esquerda em desktop
+            gap: 2,
+            textAlign: { xs: 'center', sm: 'left' },
           }}
         >
-          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-            Telefone
-          </Typography>
-          <Typography variant="body1">
+          {/* Telefone com ícone do WhatsApp */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <WhatsAppIcon color="primary" />
+            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              Telefone
+            </Typography>
+          </Box>
+          <Typography variant="body1" sx={{ cursor: 'pointer' }} onClick={openWhatsApp}>
             (48) 99617-2582
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-            Instagram
-          </Typography>
+          {/* Instagram com ícone */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <InstagramIcon color="primary" />
+            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              Instagram
+            </Typography>
+          </Box>
           <Typography variant="body1">
             <a
               href="https://www.instagram.com/cuidadosgs/?igsh=YmdvaTdiOGsxYm0z"
@@ -74,9 +90,13 @@ const Contact = () => {
             </a>
           </Typography>
 
-          <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-            Endereço
-          </Typography>
+          {/* Endereço com ícone */}
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <LocationOnIcon color="primary" />
+            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+              Endereço
+            </Typography>
+          </Box>
           <Typography variant="body1">
             AV Paulo Robertovidal, 1455, Bela Vista, Palhoça, SC
           </Typography>

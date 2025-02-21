@@ -6,7 +6,7 @@ import TransitionImage from "../assets/img/imgs/img11.jpg"
 const Hero = () => {
   
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about");
+    const aboutSection = document.getElementById("interview");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -44,7 +44,7 @@ const Hero = () => {
           mb: 2,
         }}
       >
-        Gs Agência de Cuidados de Idosos
+        Gs Agência de Cuidadores de Idosos
       </Typography>
 
       {/* Seção de Especialidade e Botão */}
@@ -80,7 +80,7 @@ const Hero = () => {
           color="primary"
           size="large"
           endIcon={<ArrowDownwardIcon />}
-          onClick={scrollToAbout} // Adiciona a função ao clique do botão
+          onClick={scrollToAbout} 
           sx={{
             borderRadius: "8px", 
             textTransform: "none",
