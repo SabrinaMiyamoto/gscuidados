@@ -15,8 +15,7 @@ function App() {
   const theme = useTheme();
   return (
     <>
-    <Router>
-      <Routes>
+
       <Header />
       <Hero />
       <About />
@@ -26,8 +25,6 @@ function App() {
       <Form />
       <FormModal />
       <Footer />
-      </Routes>
-    </Router>
     </>
   );
 }

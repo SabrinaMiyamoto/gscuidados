@@ -6,7 +6,7 @@ import TransitionImage from "../assets/img/imgs/img11.jpg"
 const Hero = () => {
   
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById("interview");
+    const aboutSection = document.getElementById("servicos");
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
