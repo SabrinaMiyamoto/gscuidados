@@ -13,26 +13,22 @@ import FormModal from "./components/FormModal";
 
 function App() {
   const theme = useTheme();
-
   return (
+    <>
     <Router>
-      <Header /> {/* O Header fica fora das rotas para aparecer em todas as páginas */}
       <Routes>
-        {/* Rota principal */}
-        <Route path="/cuidadores-de-idosos/*" element={
-          <>
-            <Hero />
-            <About />
-            <Interview />
-            <Reviews />
-            <Contact />
-            <Form />
-            <FormModal />
-          </>
-        } />
+      <Header />
+      <Hero />
+      <About />
+      <Interview />
+      <Reviews />
+      <Contact />
+      <Form />
+      <FormModal />
+      <Footer />
       </Routes>
-      <Footer /> {/* O Footer fica fora das rotas para aparecer em todas as páginas */}
     </Router>
+    </>
   );
 }
 
